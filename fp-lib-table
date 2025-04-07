@@ -1,4 +1,6 @@
 (fp_lib_table
   (version 7)
   (lib (name "sao")(type "KiCad")(uri "${KIPRJMOD}/sao.pretty")(options "")(descr ""))
+  (lib (name "swadge-sao")(type "KiCad")(uri "C:/Users/eanthony/Documents/GitHub/swadge-sao")(options "")(descr ""))
+  (lib (name "Swadge_Parts")(type "KiCad")(uri "C:/Users/eanthony/Documents/GitHub/Super-2025-Swadge-HW/Swadge-Parts/Swadge_Parts.pretty")(options "")(descr ""))
 )
