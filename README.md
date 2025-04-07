@@ -1,69 +1,53 @@
-# Swadge SAO
+# CR123A SAO
 
-These are [Simple Add-ons (SAO)](https://hackaday.io/project/52950-shitty-add-ons/log/159806-introducing-the-shitty-add-on-v169bis-standard) of Swadges ([MAGFest's](https://www.magfest.org/) swag badges). They are meant to decorate full size Swadges, but can be used on any badge with a SAO connector.
+This is an evaluation board to test the viability of using LiMnO2 CR123A cells in a 3P1S configuration on the Swadge.
 
-These [KiCad](https://www.kicad.org/) projects can be manufactured and assembled by [JLCPCB](https://jlcpcb.com/), though any PCB manufacturer should be capable. The parts used already have [LCSC](https://www.lcsc.com/) numbers and the projects can be easily exported using [Fabrication ToolKit](https://github.com/bennymeg/JLC-Plugin-for-KiCad). The projects are designed to be fabricated using [JLCPCB's "Economic PCB Assembly"](https://jlcpcb.com/capabilities/pcb-assembly-capabilities), which means:
-* Two layers
-* Board size between 10x10mm - 570x470mm
-* 0402 minimum package size
-* Single sided part placement (SMT/Thru-hole)
-* No Gold Fingers, castellated Holes, or edge Plating
-* Order in QTY 30 or 50, depending on color
+<svg  xmlns="CR123A_SAO.svg">
+</svg>
 
-It is also recommended to manually [add tooling holes](https://jlcpcb.com/help/article/47-How-to-add-tooling-holes-for-PCB-assembly-order). If you don't, then JLCPCB's engineers will add the holes themselves and validate their placement with you before manufacturing. The requirements are:
+Attendees are reporting that their Swadges are too heavy. This is largely due to the 3xAA batteries, 24g each, used to power the Swadge in a 1P3S configuration. Batteries were evaluated, and CR123A batteries were selected for further evaluation on the SAO. They weigh in at 17g each.
 
-1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical.
-1. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion.
-    > A `tooling_hole` footprint is provided in the `sao` footprint library.
-1. Tooling holes are only required for PCB assembly orders.
-1. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area.
+CR123A are non-rechargeable, Lithium Chemistry batteries commonly used in camera and firearm accessory applications. They have a higher C rating than other traditional batteries (thanks to the Lithium Chemistry) and are safer than a traditional Lithium Ion or Lithium Polymer rechargeable battery. They maintain a steady voltage level of ~2.9V and discharge curves suggest approximately a 12hr battery life at 100mA continuous draw.
 
-## Making a SAO From the Template
+Preliminary testing showed:
+1. Big Bug was pulling ~225mA
+2. Swadge hero ~90% brightness with light show ~100mA
+3. Main menu ~90mA-100mA
 
-The SAO template has everything you need to create a SAO with the standard connector and eight tiny RGB LEDs which mirror the LEDs on the main Swadge.
+This is with the MT3410 + 5V USB input. 225mA at 5V is a whopping 1.125W. If we assume that same power draw and change to a 3P1S 3.0V source, we should expect to see 375mA draw (1.125W/3.0V) from the 3 cells, or 125mA per cell.
 
-1. Install the prerequisites:
-    1. [KiCad](https://www.kicad.org/download/), the CAD program used for circuit design
-        * [Fabrication ToolKit Plugin](https://github.com/bennymeg/Fabrication-Toolkit)
-    1. [Inkscape](https://inkscape.org/en/release/), the vector drawing program used for art
-    1. [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), for version control
-    1. [Python](https://www.python.org/downloads/), necessary for:
-    1. svg2mod, a Python package to convert SVGs to KiCad modules, with the following command:
-        ```bash
-        python -m pip install svg2mod
-        ```
-1. Copy the template [art/sao_template.svg](art/sao_template.svg) and rename it for your SAO
-1. Draw your SAO in Inkscape. If you're unfamiliar with PCB art, [here's a good guide about it](https://blog.wokwi.com/a-practical-guide-to-designing-pcb-art/). Don't get too hung up about the method there, it's old. Remember when drawing in the SVG that:
-    * The `Edge.Cuts` layer is the outline of the board.
-    * Layers that start with `F` are for the front and `B` are for the back.
-    * `SilkS` layers are where silkscreen will be printed
-    * `Cu` layers are where copper will be plated
-    * `Mask` layers are where the solder mask will be **removed**. If you want to have exposed copper, draw the same shape on both the `Cu` and `Mask` layer!
-    * `Dwgs.User` isn't used for fabrication, but you can put indicators there for where to place LEDs or any other "notes to self"
-1. Convert your SVG to a `.kicad_mod` footprint file with this command. Make sure to replace the filename with your own!
-    ```bash
-    svg2mod --format latest -c -p 0.5 .\YOUR_SAO.svg
-    ```
-1. Move your `.kicad_mod` to the [sao.pretty/](sao.pretty/) folder
-1. Copy [sao_template.kicad_pro](sao_template.kicad_pro) and [sao_template.kicad_sch](sao_template.kicad_sch) and rename them both for your SAO
-1. Either in your favorite text editor or with `sed`, replace `sao_template` with your SAO's name in those two files
-    ```bash
-    sed -i 's/sao_template/YOUR_SAO/g' YOUR_SAO.kicad_pro YOUR_SAO.kicad_sch
-    ```
-1. Open YOUR_SAO.kicad_pro in KiCad
-1. Open the PCB Editor. It will ask if you want to create the PCB file, and you should. It'll be empty.
-1. Add your art by clicking `A`, selecting you footprint generated by svg2mod, and clicking on the page
-1. Import the parts with `F8`
-1. Place, route, and design rule check the parts. 
-1. Export the project using the Fabrication ToolKit (the last button on the top toolbar)
-1. Order your SAO from JLCPCB
+To prevent charging of the cells and imbalances, a Schottky Diode follows each battery into the boost converter circuit. This is the only “battery management system” on board. It is possible (but unwise) to put in the RCR123A batteries (rechargeable Lithium Ion) although they have the same form factor, as there is no individual cell monitoring on this board. Installing a battery backwards will likely be catastrophic. <b>This board is a fire hazard and should not be used except for very specific battery testing. More protection circuitry is required on a production Swadge.</b>
 
-## SAOs In This Repository
+The MT3608L Boost converter is from the same family of voltage regulators as the existing regulator on the 2025 Super Swadge. It has an adjustable overcurrent setting that is set by changing the value of R3. The schematic recommends 50k minimum, 96k maximum impedance to set the over-current limit between 0.5A (96k) to 1A (50k). I think we should set this overcurrent limit to around 0.5A to avoid damaging the cells.  This circuit reuses the 2.2uH inductor from the current Swadge power circuit. R1 and R2 were selected to output 3.3V; the reference voltage at Fb is 0.6V and a voltage divider is built to set output voltage. The value of R1 was selected to improve EMI characteristics. Increasing this impedance will likely reduce leakage current at the expense of EMI. Capacitors and diodes were selected per the datasheet recommendations.
 
-### squarewavebird_sao
+# Testing Plan
 
-This is a SAO of the Squarewavebird Swadge. The source Swadge can be found at https://github.com/AEFeinstein/Super-2023-Swadge-HW.
+The testing plan for this SAO is in two phases.
 
-### speaker_sao
+First is to attach it to a Hot Dog and monitor current draw from the USB on the SAO. This is to accomplish two tasks:
+1. Compare against the MT2410 to evaluate power efficiency and noise of this new voltage regulation circuit
+2. Gather more benchmark data to evaluate the battery performance
 
-This is a development SAO with a speaker, headphone jack, and volume dial
+The states to be evaluated are:
+
+1. Idle on Main Menu at max LED and TFT brightness, no screensaver
+2. Big Bug at max brightness, maximum volume, general gameplay for 30 minutes and logging current consumption approximately every 60 seconds
+3. Colorchord at 7 gain, LED 8, Max Screen Brightness Rainbow
+4. Stepwise 0-7 TFT brightness on Main Menu
+5. Stepwise 0-8 LED brightness on Main Menu
+6. UTTT Wireless Connect Menu at max LED and TFT brightness
+
+
+In theory, this will help us characterize current draw in various Swadge modes and help estimate run time in hours.
+
+Second is to install the batteries and:
+1. Monitor and log voltage at the diode node to GND over time
+2. Monitor and log cell voltage at each node to GND over time
+
+This will discharge a few sets of CR123A batteries in a few different states to characterize their charge time and see if the cells are staying relatively balanced. The states evaluated will be:
+1. Big Bug at max brightness, maximum volume, general gameplay
+2. Idle on Main Menu at max LED and TFT brightness, no screensaver
+3. UTTT Wireless Connect Menu at max LED and TFT brightness
+
+Durations for these tasks will be chosen based on the results of the first set of tests.
+
