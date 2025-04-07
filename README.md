@@ -2,8 +2,8 @@
 
 This is an evaluation board to test the viability of using LiMnO2 CR123A cells in a 3P1S configuration on the Swadge.
 
-<svg  xmlns="CR123A_SAO.svg">
-</svg>
+<img  src="CR123A_SAO.svg">
+</img>
 
 Attendees are reporting that their Swadges are too heavy. This is largely due to the 3xAA batteries, 24g each, used to power the Swadge in a 1P3S configuration. Batteries were evaluated, and CR123A batteries were selected for further evaluation on the SAO. They weigh in at 17g each.
 
