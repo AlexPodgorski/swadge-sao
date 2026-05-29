@@ -1,1 +1,0 @@
-svg2mod .\sqwb_sao.svg -o .\sqwb_sao.kicad_mod -c -d 3000 --format latest --factor 32 -p 0.5

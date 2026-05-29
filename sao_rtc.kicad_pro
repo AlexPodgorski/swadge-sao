@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 0.95,
+          "width": 0.9
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -60,7 +60,40 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "drill_out_of_range|90110000|72570000|5ee02074-a401-46eb-bb0f-44918594c218|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_issues|87520000|72635000|d1746682-5c1d-40c4-8b81-fe5cad5727a9|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_issues|90810000|68550000|f57bdd15-6227-47da-bbab-e83e59392741|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_issues|93190000|71370000|1f44f74d-42d4-46ab-bec3-e4f52db0b0f0|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_issues|93200000|72880000|3419a5f9-9e69-46ca-bf35-a25625046a6b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|89565118|63760000|82a208c1-e3f8-4887-bcb6-4b8828f3ff8e|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|90010000|72470000|9e78cc15-c1ce-4e75-b46e-e66cbf4a784e|00000000-0000-0000-0000-000000000000",
+          "I manually edited the footprint for now"
+        ],
+        [
+          "starved_thermal|91585000|68550000|10155b93-5972-45f6-aab2-33adf521ff11|28a734f9-941c-43c8-a5c4-be8b9146109f|F.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -240,7 +273,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -547,6 +580,10 @@
       {
         "netclass": "Power",
         "pattern": "VCC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
       }
     ]
   },
@@ -604,7 +641,7 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -631,12 +668,54 @@
           "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Description",
           "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Cost@2500",
+          "name": "Cost@2500",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey",
+          "name": "Digikey",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Cost @ 2.5k",
+          "name": "Cost @ 2.5k",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Datasheet",
+          "name": "LCSC Datasheet",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Notes",
+          "name": "Notes",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Substitutable",
+          "name": "Substitutable",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Cost100",
+          "name": "Cost100",
           "show": false
         }
       ],
@@ -695,7 +774,7 @@
         "uuid": "62150cd9-7cc2-47a7-8015-4a50aa20c64e"
       }
     ],
-    "used_designators": "#PWR1-9,#PWR72,#PWR76,#PWR84-87,C1-2,C27-28,R1-2,R6,R18,J1-2,U1,U12,Y1,TP1",
+    "used_designators": "C7-8",
     "variants": []
   },
   "sheets": [
