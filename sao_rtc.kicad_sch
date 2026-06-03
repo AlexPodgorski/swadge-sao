@@ -3883,6 +3883,199 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Swadge_Parts:LED"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Swadge_Parts:LED_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Swadge_Parts:M3410"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4460,289 +4653,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Swadge_Parts:SW_SPDT_1825232-1"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPDT_1825232-1"
-				(at 0 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Swadge_Parts:1825232-1"
-				(at 0 16.51 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_SHOU-HAN-SK12D07VG4_C393937.pdf"
-				(at 0 13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Slide Switch SPDT Through Hole, Right Angle"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Digikey" "A107673-ND"
-				(at 0 11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Cost100" "45"
-				(at 0 19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Substitutable" "Y"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 0.001 0.001)
-					)
-				)
-			)
-			(property "Notes" "Use SPDT slide switch. Similar to 1825232-1"
-				(at 0 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC" "C393937"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Swadge_Parts:SW_SPDT_PCM12"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_SPDT_1825232-1_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPDT_1825232-1_0_1"
-				(rectangle
-					(start -3.81 -7.62)
-					(end 3.81 -6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPDT_1825232-1_1_1"
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -1.27 -10.16 90)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 1.27 -10.16 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Swadge_Parts:Thermistor_NTC"
 			(pin_numbers
 				(hide yes)
@@ -5025,7 +4935,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "P"
+			(property "Reference" "P1"
 				(at -10.16 19.05 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5047,10 +4957,11 @@
 					(justify right)
 				)
 			)
-			(property "Footprint" "Swadge_Parts:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+			(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 				(at -17.78 0 90)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5061,6 +4972,7 @@
 				(at -12.7 0 90)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5071,6 +4983,7 @@
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5081,6 +4994,18 @@
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Cost100" "7.19"
+				(at -22.86 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5091,6 +5016,7 @@
 				(at -20.32 0 90)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5101,6 +5027,29 @@
 				(at -15.24 0 90)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Substitutable" "Y"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Cost @ 2.5k" "0.0334"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5352,7 +5301,7 @@
 							)
 						)
 					)
-					(number "A1_B12"
+					(number "A1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5370,7 +5319,7 @@
 							)
 						)
 					)
-					(number "A4_B9"
+					(number "A4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5460,7 +5409,7 @@
 							)
 						)
 					)
-					(number "A9_B4"
+					(number "A9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5478,7 +5427,7 @@
 							)
 						)
 					)
-					(number "A12_B1"
+					(number "A12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5568,7 +5517,352 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_Slide_DPDT"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW1"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DPDT"
+				(at 15.748 -0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN"
+				(at 13.97 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_SHOU-HAN-SK12D07VG4_C393937.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Slide Switch, dual pole double throw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Digikey" "A107673-ND"
+				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Cost100" "45"
+				(at 0 19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Substitutable" "Y"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.001 0.001)
+					)
+				)
+			)
+			(property "Notes" "Use SPDT slide switch. Similar to 1825232-1"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C393937"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Cost @ 2.5k" "0.0123"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch dual-pole double-throw dpdt ON-ON"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Slide_DPDT_0_0"
+				(circle
+					(center -2.032 5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 -5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Slide_DPDT_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Slide_DPDT_1_1"
+				(rectangle
+					(start -1.397 5.588)
+					(end -0.762 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.762 5.588)
+					(end 1.397 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6536,7 +6830,7 @@
 	)
 	(rectangle
 		(start 154.94 76.2)
-		(end 281.94 120.65)
+		(end 281.94 135.89)
 		(stroke
 			(width 0)
 			(type default)
@@ -6592,6 +6886,16 @@
 		)
 		(uuid "32cadc34-0aa4-4398-86e7-fe78a256be57")
 	)
+	(text "Swadge Power"
+		(exclude_from_sim no)
+		(at 145.034 23.622 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "40333ad1-0c1a-4e15-99ad-e52e0f51b36d")
+	)
 	(text "Requirements grow\nlike ivy on a garden wall.\nThe plan disappears."
 		(exclude_from_sim no)
 		(at 28.956 192.278 0)
@@ -6602,7 +6906,7 @@
 		)
 		(uuid "8f6ad8ee-1c1b-49d5-b9ef-1413cd8cb959")
 	)
-	(text "Added a low-pass filter with a 30.8k cutoff frequency to\nattempt to preempt any noise piped back to the swadge\nfrom the crystal. Its a little lower than the crystal\nfrequency because I wanted to use not-weird values for R and C.\n\nI added this on the regulator circuit on the SAO to\nsee what happens when it's not present on the identical\n3v3 source from the Swadge.\n\nThis circuit and switch should be close to the SAO port."
+	(text "Added a low-pass filter with a 30.8k cutoff frequency to\nattempt to preempt any noise piped back to the swadge\nfrom the crystal. Its a little lower than the crystal\nfrequency because I wanted to use not-weird values for R and C.\n\nI added this on the regulator circuit on the SAO to\nsee what happens when it's not present on the identical\n3v3 source from the Swadge.\n\nThis circuit and switch should be far away from the crystal."
 		(exclude_from_sim no)
 		(at 213.614 87.63 0)
 		(effects
@@ -6615,7 +6919,7 @@
 	)
 	(text "9. Datasheet: https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf"
 		(exclude_from_sim no)
-		(at 51.816 170.18 0)
+		(at 50.292 184.404 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6636,7 +6940,7 @@
 	)
 	(text "Notes to self:\n1. After power-on, the initial accuracy can be adjusted by testing the output frequency of CLKOUT and adjusting the matching capacitor value of the OSCI pin.\nIf CLKOUT > 32.768kHz, the OSCI capacitor value needs to be increased; if CLKOUT < 32.768kHz, the capacitor value needs to be decreased.\n\n2. Generally, if using a 32.768kHz crystal oscillator with a load capacitor of 12.5pF, approximately a 25pF matching capacitor needs to be connected to the\nOSCI pin to adjust the initial accuracy. Also added C7 on OSCO. Final values TBD\n\n3. If noise or interference signals occur on the VDD power line, it is recommended by the RTC chip mfr to add resistors and capacitors to the power line for filtering.\nCurrently C1 is the filter cap for the Swadge 3v3.\n\n4. Crystal requirements from RTC datasheet: f = 32.768 kHz, CL = 12.5 pF, ESR = 50-100k\n\n5. I added a 500mA PTC fuse to test some short circuit protections.\n\n6. I2C addresses:\n		PCF8563	= 0x51\n		AW32001 = 0x49\nSet NTC to DISABLE; this is not the default setting for this chip. TH1 = DNP, R1 = 0, R2 = DNP.\n\n7. This will back-power the Swadge. Use the switch to choose between SAO regulated power or Swadge regulated power.\n\n8. USB is for charging only."
 		(exclude_from_sim no)
-		(at 17.018 144.526 0)
+		(at 15.494 158.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6665,6 +6969,16 @@
 			)
 		)
 		(uuid "e8e2c57a-17d7-4b0d-a740-32bfba3d882c")
+	)
+	(text "RTC Power"
+		(exclude_from_sim no)
+		(at 121.158 23.622 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e9400384-8963-4710-894f-568ae1858598")
 	)
 	(junction
 		(at 115.57 54.61)
@@ -6781,16 +7095,22 @@
 		(uuid "9e48f238-496c-47fe-b4e9-a01829bc6be7")
 	)
 	(junction
-		(at 134.62 45.72)
+		(at 67.31 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "afbadc34-3251-4bc3-a38f-f7e9fc79fbb7")
+		(uuid "a71f6f9a-413b-4206-98b2-d71acd59458e")
 	)
 	(junction
 		(at 162.56 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c371d56f-a066-4a33-98dc-038cc7e7e8d9")
+	)
+	(junction
+		(at 240.03 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce851f58-083c-4e04-9115-488f8a5add35")
 	)
 	(junction
 		(at 213.36 45.72)
@@ -6858,10 +7178,6 @@
 		(color 0 0 0 0)
 		(uuid "fff39949-fee2-4766-bdac-14f2bd5d60b8")
 	)
-	(no_connect
-		(at 36.83 39.37)
-		(uuid "651895ba-a5c2-4243-855f-a9d215e2cbe0")
-	)
 	(wire
 		(pts
 			(xy 54.61 69.85) (xy 66.04 69.85)
@@ -6871,6 +7187,16 @@
 			(type default)
 		)
 		(uuid "02142fb3-f445-494b-b1e7-0805ac29e96f")
+	)
+	(wire
+		(pts
+			(xy 80.01 96.52) (xy 88.9 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03b386ba-2519-46d6-a768-8677c1a08f50")
 	)
 	(wire
 		(pts
@@ -6891,6 +7217,16 @@
 			(type default)
 		)
 		(uuid "074e138d-b9db-41e1-bc19-33ff4fee3f43")
+	)
+	(wire
+		(pts
+			(xy 142.24 35.56) (xy 138.43 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08498f55-8331-47ad-9dbd-689ec243beb9")
 	)
 	(wire
 		(pts
@@ -6921,6 +7257,26 @@
 			(type default)
 		)
 		(uuid "0cdead30-ffa1-41d7-b443-1dd39a20736b")
+	)
+	(wire
+		(pts
+			(xy 93.98 35.56) (xy 95.25 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e2812ce-d091-4c37-b5e6-e49a7f3d3458")
+	)
+	(wire
+		(pts
+			(xy 124.46 30.48) (xy 128.27 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e4a7e9a-430c-4a9b-b19f-145e8bc58b33")
 	)
 	(wire
 		(pts
@@ -6961,6 +7317,16 @@
 			(type default)
 		)
 		(uuid "10326ee5-f66f-43de-883b-664e1fe8d2d8")
+	)
+	(wire
+		(pts
+			(xy 54.61 87.63) (xy 54.61 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1175b6f0-cc99-47d9-a3fa-4c897c39852f")
 	)
 	(wire
 		(pts
@@ -7014,6 +7380,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 29.21) (xy 67.31 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c70ea39-2fcf-430a-a7d1-9e0ba02fc660")
+	)
+	(wire
+		(pts
 			(xy 204.47 101.6) (xy 204.47 102.87)
 		)
 		(stroke
@@ -7064,6 +7440,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 93.98) (xy 85.09 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36e27fce-9955-4e2c-8fb4-16aa11c1d4b9")
+	)
+	(wire
+		(pts
 			(xy 224.79 106.68) (xy 240.03 106.68)
 		)
 		(stroke
@@ -7094,7 +7480,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 30.48) (xy 34.29 39.37)
+			(xy 24.13 96.52) (xy 33.02 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7151,6 +7537,36 @@
 			(type default)
 		)
 		(uuid "4ac023cf-c79f-40c0-920a-a7a6c66f29ee")
+	)
+	(wire
+		(pts
+			(xy 110.49 87.63) (xy 110.49 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b97c2e6-141c-4ff7-8f44-fb6d8a929f24")
+	)
+	(wire
+		(pts
+			(xy 144.78 40.64) (xy 138.43 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "516c1090-754d-46dd-93ba-a0eeefebf58a")
+	)
+	(wire
+		(pts
+			(xy 124.46 40.64) (xy 128.27 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "522f1bc3-439b-4282-a91e-e41709e14871")
 	)
 	(wire
 		(pts
@@ -7274,23 +7690,13 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 38.1) (xy 142.24 36.83)
+			(xy 144.78 39.37) (xy 144.78 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5cf9a57f-2fcd-498d-82b2-4dcc26e3053a")
-	)
-	(wire
-		(pts
-			(xy 132.08 45.72) (xy 134.62 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f78b00d-f82e-4a46-b92f-9c7310449ba8")
 	)
 	(wire
 		(pts
@@ -7381,6 +7787,16 @@
 			(type default)
 		)
 		(uuid "677d9735-b96c-4ea6-983a-97005dcf39e9")
+	)
+	(wire
+		(pts
+			(xy 85.09 90.17) (xy 33.02 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68d9d1b2-a46e-41de-9db3-795272828aaf")
 	)
 	(wire
 		(pts
@@ -7484,6 +7900,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 90.17) (xy 33.02 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80c9bf1b-6054-4423-9c0f-bf72cbacd2b0")
+	)
+	(wire
+		(pts
 			(xy 182.88 82.55) (xy 187.96 82.55)
 		)
 		(stroke
@@ -7491,6 +7917,16 @@
 			(type default)
 		)
 		(uuid "83bad16f-0436-4c79-8537-0cf3c22e5a9b")
+	)
+	(wire
+		(pts
+			(xy 118.11 99.06) (xy 110.49 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84328a23-cc12-448e-bb89-881418e307b1")
 	)
 	(wire
 		(pts
@@ -7554,13 +7990,13 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 33.02) (xy 138.43 33.02)
+			(xy 58.42 29.21) (xy 67.31 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8d8d9035-270f-45c7-a4ac-9b27839e7fb5")
+		(uuid "8e156e30-0a40-4d39-b6c9-3146538342ee")
 	)
 	(wire
 		(pts
@@ -7591,26 +8027,6 @@
 			(type default)
 		)
 		(uuid "8f382c84-4366-45f5-8aa5-fbfd58597aab")
-	)
-	(wire
-		(pts
-			(xy 138.43 38.1) (xy 142.24 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f8a3263-c815-4650-ae29-8a72e02343a9")
-	)
-	(wire
-		(pts
-			(xy 88.9 35.56) (xy 95.25 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92269dc9-9491-4e3b-9e0f-a9c834a4b25a")
 	)
 	(wire
 		(pts
@@ -7684,7 +8100,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 68.58) (xy 31.75 60.96)
+			(xy 62.23 99.06) (xy 54.61 99.06)
 		)
 		(stroke
 			(width 0)
@@ -7724,7 +8140,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 35.56) (xy 77.47 35.56)
+			(xy 58.42 36.83) (xy 58.42 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7794,6 +8210,26 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 104.14) (xy 240.03 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf6286a6-cbae-45f6-b16d-92f13d7285e8")
+	)
+	(wire
+		(pts
+			(xy 88.9 93.98) (xy 85.09 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d695f2-3c89-4da5-aa13-4c494992ebe3")
+	)
+	(wire
+		(pts
 			(xy 190.5 100.33) (xy 200.66 100.33)
 		)
 		(stroke
@@ -7811,6 +8247,16 @@
 			(type default)
 		)
 		(uuid "da395e88-447c-4e4f-a581-037379df12c6")
+	)
+	(wire
+		(pts
+			(xy 82.55 29.21) (xy 93.98 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcd19894-b2e6-4a6c-b126-1922de9a8844")
 	)
 	(wire
 		(pts
@@ -7891,6 +8337,16 @@
 			(type default)
 		)
 		(uuid "e7d8110e-c617-4ab7-bf6f-30771bab04a2")
+	)
+	(wire
+		(pts
+			(xy 54.61 87.63) (xy 110.49 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8b3981e-5cfe-4ab1-8ebe-b2a4fb24ac98")
 	)
 	(wire
 		(pts
@@ -7988,6 +8444,30 @@
 	)
 	(global_label "SCL"
 		(shape input)
+		(at 110.49 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "75699132-70eb-481e-87e0-ab54b90c6c3e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.9828 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
 		(at 264.16 44.45 270)
 		(fields_autoplaced yes)
 		(effects
@@ -8036,17 +8516,17 @@
 	)
 	(global_label "SCL"
 		(shape input)
-		(at 34.29 60.96 270)
+		(at 54.61 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "8859e3af-7097-47f3-a3c0-abf35355540b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.29 67.4528 90)
+			(at 61.1028 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8054,7 +8534,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 	)
@@ -8084,17 +8564,17 @@
 	)
 	(global_label "SDA"
 		(shape input)
-		(at 34.29 30.48 90)
+		(at 24.13 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "a1eb2949-56c2-4f14-b422-bf0b3277e8cd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.29 23.9267 90)
+			(at 17.5767 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8102,7 +8582,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
@@ -8175,6 +8655,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 80.01 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bb4f6bbc-43a7-4724-9226-5a9ed0d2275c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.4567 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -8283,7 +8787,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
 			(at 193.04 32.385 0)
 			(hide yes)
 			(show_name no)
@@ -9454,7 +9958,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Swadge_Parts:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 			(at 175.26 80.01 90)
 			(hide yes)
 			(show_name no)
@@ -9564,13 +10068,13 @@
 				)
 			)
 		)
-		(pin "A12_B1"
+		(pin "A1"
 			(uuid "61e7eb67-aa69-4198-b070-ddc961e48450")
 		)
-		(pin "A1_B12"
+		(pin "A4"
 			(uuid "7fb7a07b-5da1-47b4-ae52-643f86f694ae")
 		)
-		(pin "A4_B9"
+		(pin "A9"
 			(uuid "ae9b21a0-be4c-4a43-b211-db423019ae57")
 		)
 		(pin "A5"
@@ -9585,7 +10089,7 @@
 		(pin "A8"
 			(uuid "46ce9d24-6371-48e6-8de3-42e8a834efc9")
 		)
-		(pin "A9_B4"
+		(pin "A12"
 			(uuid "d5a71baa-cc7c-4ce6-a3f7-f04cb6ceffc8")
 		)
 		(pin "B5"
@@ -9600,7 +10104,7 @@
 		(pin "B8"
 			(uuid "add536c6-efbe-4ab2-bf11-4d88ec96bedf")
 		)
-		(pin "S1"
+		(pin "SH"
 			(uuid "f3444f61-bf96-4578-a2b8-98063a2442e4")
 		)
 		(instances
@@ -9684,6 +10188,83 @@
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Swadge_Parts:GND")
+		(at 67.31 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d7b68ee-db99-45b2-ad0d-54d3a2c61449")
+		(property "Reference" "#PWR029"
+			(at 67.31 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.31 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66b5869b-6114-46e8-b85c-ce60ea571514")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -9806,83 +10387,6 @@
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Swadge_Parts:GND")
-		(at 134.62 45.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2f376df3-5ce7-463c-8e75-cf0ba412468c")
-		(property "Reference" "#PWR05"
-			(at 134.62 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 134.62 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.62 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8bb56532-3468-4a3a-abed-c98a5f56f5bd")
-		)
-		(instances
-			(project "sao_rtc"
-				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -10216,7 +10720,7 @@
 	)
 	(symbol
 		(lib_id "Swadge_Parts:+3.3V")
-		(at 240.03 106.68 0)
+		(at 240.03 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10226,7 +10730,7 @@
 		(dnp no)
 		(uuid "35be4641-93ee-4533-a57c-13fa90d7a8e0")
 		(property "Reference" "#PWR021"
-			(at 240.03 110.49 0)
+			(at 240.03 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10237,7 +10741,7 @@
 			)
 		)
 		(property "Value" "3V3 SAO"
-			(at 240.03 103.124 0)
+			(at 240.03 100.584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10247,7 +10751,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 106.68 0)
+			(at 240.03 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10258,7 +10762,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 106.68 0)
+			(at 240.03 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10269,7 +10773,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 240.03 106.68 0)
+			(at 240.03 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10427,7 +10931,7 @@
 	)
 	(symbol
 		(lib_id "Swadge_Parts:GND")
-		(at 77.47 35.56 0)
+		(at 58.42 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10437,7 +10941,7 @@
 		(dnp no)
 		(uuid "3d20eda9-aeee-498a-9d40-14b7996237cf")
 		(property "Reference" "#PWR08"
-			(at 77.47 41.91 0)
+			(at 58.42 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10448,7 +10952,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.47 39.37 0)
+			(at 58.42 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10458,7 +10962,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 35.56 0)
+			(at 58.42 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10469,7 +10973,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 35.56 0)
+			(at 58.42 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10480,7 +10984,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 35.56 0)
+			(at 58.42 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10497,6 +11001,112 @@
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Swadge_Parts:LED")
+		(at 67.31 33.02 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "403c4dba-8760-4170-a8f3-c1cfca2cb544")
+		(property "Reference" "D5"
+			(at 71.12 33.3374 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RTC ON"
+			(at 71.12 35.8774 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 71.12 34.6074 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 71.12 37.1474 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 71.12 39.6874 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "LCSC" "C965804"
+			(at 67.31 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "810bc71b-dacc-4236-8367-e86911b7fe2b")
+		)
+		(pin "1"
+			(uuid "55245109-0303-4e57-8a12-0159f2675f44")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -10796,7 +11406,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 31.75 68.58 0)
+		(at 62.23 99.06 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10807,7 +11417,7 @@
 		(fields_autoplaced yes)
 		(uuid "482cd2ba-d773-4187-babe-924f4ca1d304")
 		(property "Reference" "#PWR015"
-			(at 31.75 74.93 0)
+			(at 68.58 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10818,7 +11428,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.75 73.66 0)
+			(at 67.31 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10828,7 +11438,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 68.58 0)
+			(at 62.23 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10839,7 +11449,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 68.58 0)
+			(at 62.23 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10850,7 +11460,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 31.75 68.58 0)
+			(at 62.23 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11078,6 +11688,83 @@
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Swadge_Parts:+3V3")
+		(at 88.9 99.06 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "52e83fd8-c0fb-4ac7-b0f3-fe2f695d3900")
+		(property "Reference" "#PWR026"
+			(at 92.71 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 85.344 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 88.9 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6fb7a818-0015-4894-be92-885a84aebe35")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -11332,6 +12019,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Swadge_Parts:+3V3")
+		(at 142.24 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b158d3b-8a14-4ce2-9ff2-862e4a051913")
+		(property "Reference" "#PWR032"
+			(at 142.24 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 142.24 31.496 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 142.24 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89b48f65-6ef8-46c2-9861-e6ed60d2bd59")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "C_34")
 		(lib_id "Swadge_Parts:C")
 		(at 208.28 44.45 0)
@@ -11439,6 +12203,143 @@
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Swadge_Parts:R_US")
+		(at 240.03 118.11 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5cc36009-a60b-4f24-b6e1-5d7a7c93eb01")
+		(property "Reference" "R11"
+			(at 242.57 116.8399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22Ω"
+			(at 242.57 119.3799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 239.014 117.856 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor US symbol"
+			(at 240.03 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "~"
+			(at 234.95 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cost100" "10"
+			(at 240.03 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.254 0.254)
+				)
+			)
+		)
+		(property "Substitutable" "Y"
+			(at 240.03 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.254 0.254)
+				)
+			)
+		)
+		(property "LCSC" "C23345"
+			(at 240.03 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cost @ 2.5k" "0.0008"
+			(at 240.03 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ac035327-5788-4eb8-b079-2cd578ddefca")
+		)
+		(pin "2"
+			(uuid "236bf09a-ebc5-4fae-b172-2a639d12960f")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -11817,7 +12718,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Swadge_Parts:SW_SPDT_1825232-1")
+		(lib_id "Switch:SW_Slide_DPDT")
 		(at 133.35 35.56 0)
 		(unit 1)
 		(body_style 1)
@@ -11837,7 +12738,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_SPDT_1825232-1"
+		(property "Value" "DPDT"
 			(at 149.098 36.068 0)
 			(hide yes)
 			(show_name no)
@@ -11848,8 +12749,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Swadge_Parts:1825232-1"
-			(at 133.35 19.05 0)
+		(property "Footprint" "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN"
+			(at 147.32 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11860,7 +12761,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_SHOU-HAN-SK12D07VG4_C393937.pdf"
-			(at 133.35 21.59 0)
+			(at 133.35 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11870,7 +12771,7 @@
 				)
 			)
 		)
-		(property "Description" "Slide Switch SPDT Through Hole, Right Angle"
+		(property "Description" "Slide Switch, dual pole double throw"
 			(at 133.35 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -11962,6 +12863,9 @@
 		(pin "5"
 			(uuid "4cc4294b-0820-4451-b027-93866570b475")
 		)
+		(pin "6"
+			(uuid "ce2ffae8-d0c1-4755-a687-5dbc4bd2383c")
+		)
 		(instances
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
@@ -11973,7 +12877,7 @@
 	)
 	(symbol
 		(lib_id "Swadge_Parts:C")
-		(at 85.09 35.56 270)
+		(at 58.42 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11983,7 +12887,7 @@
 		(dnp no)
 		(uuid "77a69367-ec23-4fa6-a02b-ce2e49df562d")
 		(property "Reference" "C1"
-			(at 83.566 31.496 90)
+			(at 54.356 34.544 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11994,7 +12898,7 @@
 			)
 		)
 		(property "Value" "2.2μF"
-			(at 82.804 39.37 90)
+			(at 62.23 35.306 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12005,7 +12909,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 81.28 36.5252 0)
+			(at 59.3852 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12016,7 +12920,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 35.56 0)
+			(at 58.42 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12027,7 +12931,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 85.09 35.56 0)
+			(at 58.42 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12038,7 +12942,7 @@
 			)
 		)
 		(property "Cost100" "10"
-			(at 85.09 35.56 0)
+			(at 58.42 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12049,7 +12953,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 90.17 38.735 0)
+			(at 61.595 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12060,7 +12964,7 @@
 			)
 		)
 		(property "Substitutable" "Y"
-			(at 85.09 35.56 0)
+			(at 58.42 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12071,7 +12975,7 @@
 			)
 		)
 		(property "LCSC" "C6119848"
-			(at 85.09 35.56 0)
+			(at 58.42 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12082,7 +12986,7 @@
 			)
 		)
 		(property "Cost @ 2.5k" "0.0015"
-			(at 85.09 35.56 0)
+			(at 58.42 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12231,7 +13135,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 142.24 36.83 0)
+		(at 144.78 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12241,7 +13145,7 @@
 		(dnp no)
 		(uuid "78c26ba3-a48f-40ac-b854-f0c7526ab075")
 		(property "Reference" "#PWR02"
-			(at 142.24 40.64 0)
+			(at 144.78 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12252,7 +13156,7 @@
 			)
 		)
 		(property "Value" "3V3 SAO"
-			(at 141.732 32.766 0)
+			(at 144.272 35.306 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12263,7 +13167,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 36.83 0)
+			(at 144.78 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12274,7 +13178,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 36.83 0)
+			(at 144.78 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12285,7 +13189,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 142.24 36.83 0)
+			(at 144.78 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12939,8 +13843,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Swadge_Parts:+3V3")
-		(at 139.7 33.02 0)
+		(lib_id "Swadge_Parts:R_US")
+		(at 67.31 40.64 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12948,9 +13852,32 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9efafa45-f5ae-4187-8790-0d16bd148ddb")
-		(property "Reference" "#PWR01"
-			(at 139.7 36.83 0)
+		(fields_autoplaced yes)
+		(uuid "9f896c89-4bcb-4b88-a885-bde24fb5aa69")
+		(property "Reference" "R12"
+			(at 69.85 39.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22Ω"
+			(at 69.85 41.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 66.294 40.386 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12960,18 +13887,8 @@
 				)
 			)
 		)
-		(property "Value" "3V3"
-			(at 139.7 28.956 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 33.02 0)
+		(property "Datasheet" "~"
+			(at 64.77 40.64 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12981,8 +13898,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 139.7 33.02 0)
+		(property "Description" "Resistor US symbol"
+			(at 67.31 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12992,8 +13909,52 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 139.7 33.02 0)
+		(property "Digikey" "~"
+			(at 62.23 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cost100" "10"
+			(at 67.31 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.254 0.254)
+				)
+			)
+		)
+		(property "Substitutable" "Y"
+			(at 67.31 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.254 0.254)
+				)
+			)
+		)
+		(property "LCSC" "C23345"
+			(at 67.31 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cost @ 2.5k" "0.0008"
+			(at 67.31 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13004,12 +13965,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "160ae46b-47c5-490a-9aa7-b2b75ec7d66b")
+			(uuid "28ed5623-be94-4b6d-8a2b-08e65bef001a")
+		)
+		(pin "2"
+			(uuid "043b14ed-5051-49f7-9836-11631f44210b")
 		)
 		(instances
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
-					(reference "#PWR01")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -13089,6 +14053,109 @@
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
 					(reference "CLK0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sao:Conn_02x03_Odd_Even")
+		(at 93.98 96.52 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aac9803d-28fc-40fa-b291-750c24c26252")
+		(property "Reference" "J3"
+			(at 101.6 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x03_Odd_Even"
+			(at 102.87 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
+			(at 93.98 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2003191006_XFCN-PZ254V-12-6P_C492420.pdf"
+			(at 93.98 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C492420"
+			(at 93.98 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bc38dae9-bbe8-45eb-98cc-42fb139fecea")
+		)
+		(pin "4"
+			(uuid "2572a054-c108-40ad-8d8d-e781766360fd")
+		)
+		(pin "6"
+			(uuid "aee36337-3d13-4d7e-986c-9535c1ddfc76")
+		)
+		(pin "2"
+			(uuid "25909b99-1b51-4332-a210-e95672383574")
+		)
+		(pin "5"
+			(uuid "2d3a42e6-4e79-4f3c-9788-12ffc873f5de")
+		)
+		(pin "3"
+			(uuid "2dfdde8f-44bb-430b-bbeb-7f3b3410b366")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -13224,6 +14291,267 @@
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Swadge_Parts:LED")
+		(at 240.03 110.49 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac933a68-2e7a-4f1c-ad0f-ca94aad9523c")
+		(property "Reference" "D4"
+			(at 243.84 110.8074 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3V3 ON"
+			(at 243.84 113.3474 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 243.84 112.0774 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 243.84 114.6174 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 243.84 117.1574 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "LCSC" "C965804"
+			(at 240.03 110.49 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1f120692-e45a-4b02-825b-70e027705040")
+		)
+		(pin "1"
+			(uuid "efe99b2b-7a40-4a89-8f66-50be106d5c58")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 118.11 99.06 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b010b7b1-a1e8-4405-a622-6b17e2cf2e4f")
+		(property "Reference" "#PWR027"
+			(at 124.46 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb53bcf2-4c58-4aab-a3ec-bfc18939bd86")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Swadge_Parts:GND")
+		(at 240.03 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b5815e56-fbb4-43bf-8b80-91326f04dbcd")
+		(property "Reference" "#PWR028"
+			(at 240.03 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbcab496-ede8-4171-b1d2-a38fc70bf53c")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -14040,7 +15368,7 @@
 	)
 	(symbol
 		(lib_id "sao:Conn_02x03_Odd_Even")
-		(at 34.29 44.45 90)
+		(at 38.1 96.52 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -14051,7 +15379,7 @@
 		(dnp no)
 		(uuid "e5bd5bf2-c4d5-4cd4-8009-8a9bfd29192d")
 		(property "Reference" "J2"
-			(at 25.4 52.07 0)
+			(at 45.72 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14061,7 +15389,7 @@
 			)
 		)
 		(property "Value" "Conn_02x03_Odd_Even"
-			(at 27.94 53.34 0)
+			(at 46.99 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14071,7 +15399,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 41.91 44.45 0)
+			(at 38.1 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14082,7 +15410,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2003191006_XFCN-PZ254V-12-6P_C492420.pdf"
-			(at 44.45 44.45 0)
+			(at 38.1 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14093,7 +15421,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 34.29 44.45 0)
+			(at 38.1 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14104,7 +15432,7 @@
 			)
 		)
 		(property "LCSC" "C492420"
-			(at 46.99 44.45 0)
+			(at 38.1 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14256,6 +15584,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Swadge_Parts:+3V3")
+		(at 124.46 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ea0a74d5-27ca-440b-87ef-e2eab9082fa4")
+		(property "Reference" "#PWR031"
+			(at 124.46 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 124.46 26.416 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 124.46 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5b48624-7b43-41c6-8b71-9deea1665635")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Swadge_Parts:GND")
 		(at 185.42 95.25 0)
 		(unit 1)
@@ -14334,7 +15739,7 @@
 	)
 	(symbol
 		(lib_id "Swadge_Parts:+3V3")
-		(at 31.75 39.37 0)
+		(at 95.25 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14342,9 +15747,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f545a013-b5f8-47f0-a6a4-9ce3c68205db")
-		(property "Reference" "#PWR07"
-			(at 31.75 43.18 0)
+		(uuid "edc79b96-c413-4a27-b45a-49f4cc0076a7")
+		(property "Reference" "#PWR025"
+			(at 95.25 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14354,8 +15759,8 @@
 				)
 			)
 		)
-		(property "Value" "3V3"
-			(at 31.75 35.814 0)
+		(property "Value" "VDD"
+			(at 95.25 31.496 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14365,7 +15770,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 39.37 0)
+			(at 95.25 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14376,7 +15781,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 39.37 0)
+			(at 95.25 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14387,7 +15792,84 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 31.75 39.37 0)
+			(at 95.25 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1def00af-72d8-46ec-a99e-bc31b1ca3e76")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Swadge_Parts:+3V3")
+		(at 33.02 99.06 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f545a013-b5f8-47f0-a6a4-9ce3c68205db")
+		(property "Reference" "#PWR07"
+			(at 36.83 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 29.464 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 33.02 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14541,6 +16023,84 @@
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 124.46 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fed11c74-e7da-4b9a-9686-c69b72c13cb7")
+		(property "Reference" "#PWR05"
+			(at 124.46 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3 SAO"
+			(at 116.84 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 124.46 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46a96656-f729-49f6-b6ec-cb52fe75cea9")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
