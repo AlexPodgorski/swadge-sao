@@ -104,10 +104,6 @@
         [
           "starved_thermal|98989509|90822009|10155b93-5972-45f6-aab2-33adf521ff11|aa427eaf-6fee-4859-b415-4f9f5875924e|F.Cu",
           ""
-        ],
-        [
-          "via_diameter|90110000|72570000|5ee02074-a401-46eb-bb0f-44918594c218|00000000-0000-0000-0000-000000000000",
-          ""
         ]
       ],
       "meta": {
@@ -790,7 +786,7 @@
         "uuid": "62150cd9-7cc2-47a7-8015-4a50aa20c64e"
       }
     ],
-    "used_designators": "D4-5,#PWR1,#PWR5,#PWR26-33,R11-12,J3,Q1-2",
+    "used_designators": "L2",
     "variants": []
   },
   "sheets": [

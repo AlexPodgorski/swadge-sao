@@ -6906,7 +6906,7 @@
 		)
 		(uuid "8f6ad8ee-1c1b-49d5-b9ef-1413cd8cb959")
 	)
-	(text "Added a low-pass filter with a 30.8k cutoff frequency to\nattempt to preempt any noise piped back to the swadge\nfrom the crystal. Its a little lower than the crystal\nfrequency because I wanted to use not-weird values for R and C.\n\nI added this on the regulator circuit on the SAO to\nsee what happens when it's not present on the identical\n3v3 source from the Swadge.\n\nThis circuit and switch should be far away from the crystal."
+	(text "Added a low-pass filter with a 30.8k cutoff frequency to\nattempt to preempt any noise piped back to the swadge\nfrom the crystal. Its a little lower than the crystal\nfrequency because I wanted to use not-weird values for L and C.\n\nI added this on the regulator circuit on the SAO to\nsee what happens when it's not present on the identical\n3v3 source from the Swadge.\n\nThis circuit and switch should be far away from the crystal."
 		(exclude_from_sim no)
 		(at 213.614 87.63 0)
 		(effects
@@ -6938,7 +6938,7 @@
 		)
 		(uuid "b791b694-310b-41f8-b7f3-ded990977a77")
 	)
-	(text "Notes to self:\n1. After power-on, the initial accuracy can be adjusted by testing the output frequency of CLKOUT and adjusting the matching capacitor value of the OSCI pin.\nIf CLKOUT > 32.768kHz, the OSCI capacitor value needs to be increased; if CLKOUT < 32.768kHz, the capacitor value needs to be decreased.\n\n2. Generally, if using a 32.768kHz crystal oscillator with a load capacitor of 12.5pF, approximately a 25pF matching capacitor needs to be connected to the\nOSCI pin to adjust the initial accuracy. Also added C7 on OSCO. Final values TBD\n\n3. If noise or interference signals occur on the VDD power line, it is recommended by the RTC chip mfr to add resistors and capacitors to the power line for filtering.\nCurrently C1 is the filter cap for the Swadge 3v3.\n\n4. Crystal requirements from RTC datasheet: f = 32.768 kHz, CL = 12.5 pF, ESR = 50-100k\n\n5. I added a 500mA PTC fuse to test some short circuit protections.\n\n6. I2C addresses:\n		PCF8563	= 0x51\n		AW32001 = 0x49\nSet NTC to DISABLE; this is not the default setting for this chip. TH1 = DNP, R1 = 0, R2 = DNP.\n\n7. This will back-power the Swadge. Use the switch to choose between SAO regulated power or Swadge regulated power.\n\n8. USB is for charging only."
+	(text "Notes to self:\n1. After power-on, the initial accuracy can be adjusted by testing the output frequency of CLKOUT and adjusting the matching capacitor value of the OSCI pin.\nIf CLKOUT > 32.768kHz, the OSCI capacitor value needs to be increased; if CLKOUT < 32.768kHz, the capacitor value needs to be decreased.\n\n2. Generally, if using a 32.768kHz crystal oscillator with a load capacitor of 12.5pF, approximately a 25pF matching capacitor needs to be connected to the\nOSCI pin to adjust the initial accuracy. Also added C7 on OSCO. Final values TBD\n\n3. If noise or interference signals occur on the VDD power line, it is recommended by the RTC chip mfr to add resistors and capacitors to the power line for filtering.\nCurrently C1 is the filter cap for the Swadge 3v3.\n\n4. Crystal requirements from RTC datasheet: f = 32.768 kHz, CL = 12.5 pF, ESR = 50-100k\n\n5. I added a 500mA PTC fuse to test some short circuit protections.\n\n6. I2C addresses:\n		PCF8563	= 0x51\n		AW32001 = 0x49\nSet NTC to DISABLE; this is not the default setting for this chip. TH1 = DNP, R1 = 0, R2 = DNP.\n\n7. This will back-power the Swadge. Use the switch to choose between SAO regulated power or Swadge regulated power. Please be careful and\nremove the power source from the Swadge before switching over to SAO power.\n\n8. USB is for charging only."
 		(exclude_from_sim no)
 		(at 15.494 158.75 0)
 		(effects
@@ -9106,7 +9106,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120 pF"
+		(property "Value" "12uF"
 			(at 225.425 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11184,141 +11184,6 @@
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Swadge_Parts:R_US")
-		(at 218.44 106.68 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "434f4f23-a332-450a-bef6-dfb6d66fba8b")
-		(property "Reference" "R10"
-			(at 218.44 100.33 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "43kΩ"
-			(at 218.44 102.87 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 218.694 105.664 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 218.44 104.14 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor US symbol"
-			(at 218.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey" "~"
-			(at 215.9 101.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Cost100" "10"
-			(at 218.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.254 0.254)
-				)
-			)
-		)
-		(property "Substitutable" "Y"
-			(at 218.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.254 0.254)
-				)
-			)
-		)
-		(property "LCSC" "C23172"
-			(at 218.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Cost @ 2.5k" "0.0008"
-			(at 218.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "39dcc794-649e-4ead-8dfe-ebfc01683917")
-		)
-		(pin "2"
-			(uuid "42309216-ccc1-4b8e-8c16-3cfd802b554a")
-		)
-		(instances
-			(project "sao_rtc"
-				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
-					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -14475,6 +14340,140 @@
 			(project "sao_rtc"
 				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Swadge_Parts:L")
+		(at 218.44 106.68 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b1d60496-56b3-4199-a79c-f36092f01195")
+		(property "Reference" "L2"
+			(at 218.44 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2uH"
+			(at 218.44 108.585 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C216158"
+			(at 218.44 106.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cost100" "0.019"
+			(at 218.44 106.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Substitutable" "Y"
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "~"
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cost @ 2.5k" "0.0331"
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ad2b144-6cf7-44ec-b54d-09b833500b97")
+		)
+		(pin "2"
+			(uuid "6211c075-9e25-44b5-81c0-8f2b6098881d")
+		)
+		(instances
+			(project "sao_rtc"
+				(path "/62150cd9-7cc2-47a7-8015-4a50aa20c64e"
+					(reference "L2")
 					(unit 1)
 				)
 			)
