@@ -76,40 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "lib_footprint_issues|101010000|89030000|72248657-64cd-4fef-8902-0e291209f75f|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_issues|93190000|71370000|1f44f74d-42d4-46ab-bec3-e4f52db0b0f0|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_issues|93200000|72880000|3419a5f9-9e69-46ca-bf35-a25625046a6b|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_edge_clearance|104725000|60771376|2bc60a75-775d-46e0-bb87-65b6a9041a15|a98a7b78-44af-4dfa-8f73-cf73b052b922",
-          ""
-        ],
-        [
-          "silk_edge_clearance|95325000|60771376|2bc60a75-775d-46e0-bb87-65b6a9041a15|5a59bf26-90d9-4b42-9352-01f4aea9daee",
-          ""
-        ],
-        [
-          "starved_thermal|112785000|81350000|10155b93-5972-45f6-aab2-33adf521ff11|fb1d1c98-5111-4b29-ba2d-212f55323aed|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|118990000|88725000|10155b93-5972-45f6-aab2-33adf521ff11|e3484251-695d-4d8b-afa4-a7f06de8bad1|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|98989509|90822009|10155b93-5972-45f6-aab2-33adf521ff11|aa427eaf-6fee-4859-b415-4f9f5875924e|F.Cu",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -285,6 +252,10 @@
         {
           "diameter": 0.5,
           "drill": 0.2
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.25
         },
         {
           "diameter": 0.8,
