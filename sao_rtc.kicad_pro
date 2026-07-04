@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.7,
-          "width": 1.7
+          "drill": 0.0,
+          "height": 2.6,
+          "width": 2.6
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -78,14 +78,6 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|89860000|72570000|5ee02074-a401-46eb-bb0f-44918594c218|bf482eb3-af32-4171-a176-2e46d82aa087",
-          ""
-        ],
-        [
-          "drill_out_of_range|90110000|72570000|5ee02074-a401-46eb-bb0f-44918594c218|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "lib_footprint_issues|101010000|89030000|72248657-64cd-4fef-8902-0e291209f75f|00000000-0000-0000-0000-000000000000",
           ""
         ],
@@ -96,10 +88,6 @@
         [
           "lib_footprint_issues|93200000|72880000|3419a5f9-9e69-46ca-bf35-a25625046a6b|00000000-0000-0000-0000-000000000000",
           ""
-        ],
-        [
-          "lib_footprint_mismatch|90010000|72470000|9e78cc15-c1ce-4e75-b46e-e66cbf4a784e|00000000-0000-0000-0000-000000000000",
-          "I manually edited the footprint for now"
         ],
         [
           "silk_edge_clearance|104725000|60771376|2bc60a75-775d-46e0-bb87-65b6a9041a15|a98a7b78-44af-4dfa-8f73-cf73b052b922",
@@ -258,7 +246,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.25,
+        0.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -290,6 +281,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.2
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false
@@ -802,7 +801,7 @@
         "uuid": "62150cd9-7cc2-47a7-8015-4a50aa20c64e"
       }
     ],
-    "used_designators": "#PWR5,#PWR13-14,#PWR16,#PWR24-25,#PWR29-42,D5-7,L2-3,U4-5,J4,C1,C5,C7,C12-17,TP1-4,JP1,H1,R10,R12-17,SW2,FL1",
+    "used_designators": "#PWR5,#PWR13-14,#PWR16,#PWR18,#PWR20,#PWR24-25,#PWR29-45,D5-7,L1-3,U1,U3-5,J4,C1-2,C5,C7,C9-19,TP1-7,JP1-2,H1-2,R6-10,R12-18,SW2,FL1,F1,FB1",
     "variants": []
   },
   "sheets": [
@@ -817,6 +816,14 @@
     [
       "b7d78970-598f-4360-8173-be0644c33547",
       "Batt Supply"
+    ],
+    [
+      "06ce819f-a23b-48a0-83c6-71be3d6d6787",
+      "BMS"
+    ],
+    [
+      "43e8d737-fbef-4768-92b4-654dfad4f436",
+      "3V3_REG"
     ]
   ],
   "text_variables": {},

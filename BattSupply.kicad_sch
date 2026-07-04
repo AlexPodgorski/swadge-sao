@@ -638,7 +638,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sao:CPC-5_2.6mmx4mm_P0.53mm"
 			(at 127 111.76 0)
 			(hide yes)
 			(show_name no)
