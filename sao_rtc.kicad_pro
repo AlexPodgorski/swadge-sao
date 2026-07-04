@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.0,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -782,17 +798,25 @@
     "top_level_sheets": [
       {
         "filename": "sao_rtc.kicad_sch",
-        "name": "sao_rtc",
+        "name": "SAO_BQ-BMS",
         "uuid": "62150cd9-7cc2-47a7-8015-4a50aa20c64e"
       }
     ],
-    "used_designators": "L2",
+    "used_designators": "#PWR5,#PWR13-14,#PWR16,#PWR24-25,#PWR29-42,D5-7,L2-3,U4-5,J4,C1,C5,C7,C12-17,TP1-4,JP1,H1,R10,R12-17,SW2,FL1",
     "variants": []
   },
   "sheets": [
     [
       "62150cd9-7cc2-47a7-8015-4a50aa20c64e",
-      "sao_rtc"
+      "SAO_BQ-BMS"
+    ],
+    [
+      "c266de96-fc12-48c9-ad5e-90dbf25f8cfe",
+      "RTC"
+    ],
+    [
+      "b7d78970-598f-4360-8173-be0644c33547",
+      "Batt Supply"
     ]
   ],
   "text_variables": {},
